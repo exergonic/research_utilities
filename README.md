@@ -62,7 +62,7 @@ research_utilities/
 ├── spartan/                 #  Spartan dihedral scan plotting
 │   └── spartan_plot_dihedral_scan  #  Parse + plot dihedral scans (NumPy/SciPy/Matplotlib)
 ├── thermochemistry/         #  Thermochemical property calculators
-│   └── calc_density_or_vol  #  Convert between density (g/cm³) and volume (Å³)
+│   └── calc_density_or_vol.py  #  Convert between density (g/cm^3) and volume (Ang^3)
 ├── LICENSE                  #  BSD 2-Clause license
 └── README.md                #  This file
 ```
