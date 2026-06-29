@@ -1,4 +1,4 @@
-#!/home/aubbwc/usr/bin/python3
+#!/usr/bin/env python3
 
 # ABOUT-----------------------------------------------------------------------
 # setting up jobs for Ewald alternative calculations.
@@ -155,7 +155,8 @@ for cation in pyr_cations:
                     currentdir = os.getcwd()
                     os.chdir(pathname)
                     submitcmd = glob('*csh')
-                    subprocess.call(["/home/aubbwc/scripts/runboss", submitcmd[0]])
+                    runboss = os.environ.get('RUNBOSS', '/path/to/runboss')
+                    subprocess.call([runboss, submitcmd[0]])
                     os.chdir(currentdir)
 
 

@@ -5,7 +5,7 @@
 # declare some variables
 declare LOCALDIR="$PWD"
 declare CONSTANT="$( basename $LOCALDIR )"
-declare TEMPLATE_DIR="/home/billy/research/Keto-Enol/EtN/CH3CN/refine/template_dir"
+declare TEMPLATE_DIR="${TEMPLATE_DIR:-/path/to/your/template_dir}"
 declare PREOPT_ZMAT_DIR="$LOCALDIR/preopt_zmats/" 
 declare PREFIX="NH" # prefix appended to subdirectory window names
 declare START="1.05"  # the initial bong length

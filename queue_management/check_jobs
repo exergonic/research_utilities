@@ -19,7 +19,8 @@ fi
 # use a temporary file in order to not query the que
 # for every job.
 QUEFILE="./.que.txt"
-qstat -u aubbwc > $QUEFILE
+USER="${USER:-${USERNAME:-aubbwc}}"
+qstat -u $USER > $QUEFILE
 
 # for every job in the jobs.txt file, grep the job number
 # to see if its in the que file just produced above.  if so,

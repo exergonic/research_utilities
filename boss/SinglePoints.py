@@ -1,4 +1,4 @@
-#!/home/aubbwc/usr/bin/python3
+#!/usr/bin/env python3
 
 
 import os,sys, shutil
@@ -121,7 +121,8 @@ for cation in cations:
                     currentdir = os.getcwd()
                     os.chdir(pathname)
                     submitcmd = glob('*csh')
-                    subprocess.call(["/home/aubbwc/scripts/runboss", submitcmd[0]])
+                    runboss = os.environ.get('RUNBOSS', '/path/to/runboss')
+                    subprocess.call([runboss, submitcmd[0]])
                     os.chdir(currentdir)
                 #/end of 'for methods ...' loop
             #/end of 'for cutoff ...' loop

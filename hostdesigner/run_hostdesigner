@@ -4,7 +4,9 @@
 set -e
 set -u
 
-files=( ~/usr/bin/hostd3 ~/usr/lib/hostd/LIBRARY ~/usr/lib/hostd/CONSTANTS ~/usr/lib/hostd/add.prm)
+HOSTD_BIN="${HOSTD_BIN:-$HOME/usr/bin}"
+HOSTD_LIB="${HOSTD_LIB:-$HOME/usr/lib/hostd}"
+files=( ${HOSTD_BIN}/hostd3 ${HOSTD_LIB}/LIBRARY ${HOSTD_LIB}/CONSTANTS ${HOSTD_LIB}/add.prm)
 
 for file in ${files[@]}
 do

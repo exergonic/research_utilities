@@ -2,7 +2,7 @@
 
 localdir=$PWD
 template_dir=${localdir}/template_dir
-zmat_dir=~/research/keto-enol/pyridine/preopt_zmats
+zmat_dir="${ZMAT_DIR:-~/research/keto-enol/pyridine/preopt_zmats}"
 
 
 if [ "$1" = "submit" -o "$1" = "s" ] ; then

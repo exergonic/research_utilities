@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 localdir=${PWD}
 dirs="$( find . -mindepth 1 -maxdepth 1 -type d | sort | grep [0-9] )"
